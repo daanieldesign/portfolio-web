@@ -74,7 +74,6 @@ section .obrazekreditele img{
     flex: 1;
     height: auto;
     margin: 0;
-
 }
 .obrazekreditele{
     display: grid;
@@ -82,11 +81,10 @@ section .obrazekreditele img{
     width: 100%;
 }
 section .slova{
-    flex: 3;
+
 }
 
 section .slova p {
-    width: 500px;
     color: #a2a2a2;
     text-align: center;
     font-style: italic;
@@ -140,8 +138,13 @@ section .slova p {
     max-width: 330px;
     max-height: 389px;
 }
+.section-blog img{
+    max-width: 150px;
+
+}
 .blog h2{
     color: #6E6E6E;
+    text-align: center;
 }
 .blog p{
     color: #6E6E6E;
