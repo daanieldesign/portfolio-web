@@ -22,7 +22,7 @@ header img{
 header a {
     color: black;
     text-align: center;
-    font-family: "Bell MT";
+    font-family: Calibri;
     padding: 12px;
     margin: 0 .5rem 0 .5rem;
     text-decoration: none;
@@ -80,6 +80,7 @@ header a.active {
 body{
     margin: auto;
     background-color: #f5f5f5;
+    font-family: Calibri;
 }
 
 .container2 {
@@ -98,8 +99,12 @@ section .obrazekreditele img{
     place-items: center;
     width: 100%;
 }
-section .slova{
 
+section .slova-contacts p {
+    color: black;
+    text-align: center;
+    font-style: italic;
+    margin: auto auto 2.248514rem auto;
 }
 
 section .slova p {
@@ -110,7 +115,7 @@ section .slova p {
 }
 
 .header-welcome{
-    font-family: "Bell MT";
+    font-family: Calibri;
     font-weight: 300;
     text-align: center;
 }
@@ -119,6 +124,7 @@ section .slova p {
     width: 100%;
     height: 80px;
     padding-top: 1.248514rem;
+    margin-top: 10px;
 }
 .mainblock2 h1 {
     color: black;;
@@ -129,7 +135,7 @@ section .slova p {
 .container{
     display: flex;
     flex-direction: column;
-    font-family: "Bell MT";
+    font-family: Calibri;
     width: 75%;
     margin: auto;
     margin-top: 10px;
@@ -163,7 +169,7 @@ section .slova p {
     text-align: center;
     max-width: 330px;
     max-height: 389px;
-    font-family: Arial;
+    font-family: "Calibri Light";
     font-style: italic;
 }
 .section-portfolio img{
