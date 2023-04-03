@@ -55,6 +55,56 @@ header a.logo-button:hover{
     flex-direction: row;
 }
 
+.portfolio-buttons{
+    display: flex;
+    flex-direction: row;
+}
+
+.portfolio-buttons a {
+    color: black;
+    text-align: center;
+    font-family: Calibri;
+    padding: 12px;
+    margin: 0 .5rem 0 .5rem;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+.portfolio-buttons a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.button-overlay{
+    display: flex;
+    background-color: #1982FC;
+    border-radius: 18px;
+    scale: 180%;
+}
+
+.button-overlay a {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-family: Calibri;
+    padding: 12px;
+    margin: 0 .5rem 0 .5rem;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+.button-overlay:hover {
+    background-color: #f6f3ed;
+}
+
+.button-overlay a:hover{
+    color: black;
+}
+
 header a.logo {
     font-size: 25px;
     font-weight: bold;
@@ -65,7 +115,7 @@ header a:hover {
     color: black;
 }
 
-header a.active {
+.header a.active {
     background-color: #b69fea;
     color: white;
 }
@@ -89,6 +139,13 @@ body{
     background-color: #fbfbfd;
     margin: auto;
 }
+
+.container3 {
+    width: 100%;
+    height: 9rem;
+    background-color: #070724;
+    margin: auto;
+}
 section .obrazekreditele img{
     flex: 1;
     height: auto;
@@ -101,7 +158,7 @@ section .obrazekreditele img{
 }
 
 section .slova-contacts p {
-    color: black;
+    color: white;
     text-align: center;
     font-style: italic;
     margin: auto auto 2.248514rem auto;
@@ -127,7 +184,20 @@ section .slova p {
     margin-top: 10px;
 }
 .mainblock2 h1 {
-    color: black;;
+    color: white;
+    font-weight: 300;
+    text-align: center;
+}
+
+.mainblock1{
+    width: 100%;
+    height: 80px;
+    padding-top: 1.248514rem;
+    margin-top: 10px;
+}
+
+.mainblock1 h1 {
+    color: black;
     font-weight: 300;
     text-align: center;
 }
@@ -192,6 +262,7 @@ section .slova p {
     display: flex;
     margin: 25px 20px;
     justify-items: center;
+    filter: blur(4px);
 }
 article .blog{
     display: flex;
@@ -202,6 +273,6 @@ article .blog{
 section p{
     text-align: center;
 }
-.tlacitko a:hover{
+.tlacitko a:hover {
     color: #ffffff;
 }
