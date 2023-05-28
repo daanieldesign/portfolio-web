@@ -3,276 +3,611 @@
 }
 
 html{
-    scroll-behavior: smooth;;
+    scroll-behavior: smooth;
 }
 
-header {
-    display: flex;
-    flex-direction: row;
-    background-color: white;
-    padding: 0  5% 0 5%;
-    align-items: center;
-    position: fixed;
-    width: 100%;
-}
-header img{
-    height: 70px;
+
+@media screen and (min-width: 300px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        background-color: white;
+        padding: 0 5% 0 5%;
+        align-items: center;
+        position: fixed;
+        width: 100%;
+    }
+
+    header img {
+        height: 70px;
+    }
+
+    header a {
+        color: #2d2d3b;
+        text-align: center;
+        font-family: Calibri;
+        padding: 12px;
+        margin: 0 .5rem 0 .5rem;
+        text-decoration: none;
+        font-size: 18px;
+        line-height: 25px;
+        border-radius: 4px;
+    }
+
+    header a.logo-button:hover {
+        background-color: transparent;
+        color: #1982FC;
+        transition-duration: 0.2s;
+    }
+
+
+    .section-portfolio {
+        background-color: transparent;
+        padding: 20px 10px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .header-right {
+        margin-left: auto;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .portfolio-buttons {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .portfolio-buttons a {
+        color: black;
+        text-align: center;
+        font-family: Calibri;
+        padding: 12px;
+        margin: 0 .5rem 0 .5rem;
+        text-decoration: none;
+        font-size: 18px;
+        line-height: 25px;
+        border-radius: 4px;
+    }
+
+    .portfolio-buttons a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
+    .button-overlay {
+        display: flex;
+        background-color: #1982FC;
+        border-radius: 18px;
+        scale: 180%;
+    }
+
+    .button-overlay a {
+        color: white;
+        text-align: center;
+        font-weight: bold;
+        font-family: Calibri;
+        padding: 12px;
+        margin: 0 .5rem 0 .5rem;
+        text-decoration: none;
+        font-size: 18px;
+        line-height: 25px;
+        border-radius: 4px;
+    }
+
+    .button-overlay:hover {
+        background-color: #f6f3ed;
+    }
+
+    .button-overlay a:hover {
+        color: black;
+    }
+
+    header a.logo {
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    header a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
+    .header a.active {
+        background-color: #b69fea;
+        color: white;
+    }
+
+    .separator {
+        background-color: darkgray;
+        width: 100%;
+        height: 1px;
+        padding-bottom: 6.4rem;
+    }
+
+    .separator-header {
+        background-color: darkgray;
+        width: 100%;
+        height: 1px;
+        padding-bottom: 6.2rem;
+    }
+
+    body {
+        margin: auto;
+        background-color: #f5f5f5;
+        font-family: Calibri;
+    }
+
+    .container2 {
+        max-width: 75%;
+        height: 7rem;
+        background-color: #fbfbfd;
+        margin: auto;
+    }
+
+    .container2 h1 {
+        text-align: center;
+        margin: auto;
+
+    }
+
+    .container3 {
+        width: 100%;
+        height: 7rem;
+        background-color: #070724;
+        margin: auto;
+        margin-top: 8rem;
+    }
+
+    section .obrazekreditele img {
+        flex: 1;
+        height: auto;
+        margin: 0;
+    }
+
+    .obrazekreditele {
+        display: grid;
+        place-items: center;
+        width: 100%;
+    }
+
+    section .slova-contacts p {
+        color: white;
+        text-align: center;
+        font-style: italic;
+        margin: auto auto 2.248514rem auto;
+    }
+
+    section .slova p {
+        color: #a2a2a2;
+        text-align: center;
+        font-style: italic;
+        margin: auto auto 2.248514rem auto;
+    }
+
+    .header-welcome {
+        font-family: Calibri;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .mainblock2 {
+        width: 100%;
+        height: 80px;
+        padding-top: 1.248514rem;
+        margin-top: 10px;
+    }
+
+    .mainblock2 h1 {
+        color: white;
+        font-weight: 300;
+        text-align: center;
+    }
+
+    .mainblock1 {
+        width: 100%;
+        height: 80px;
+        padding-top: 1.248514rem;
+        margin-top: 10px;
+    }
+
+    .mainblock1 h1 {
+        color: black;
+        font-weight: 300;
+        text-align: center;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        font-family: Calibri;
+        width: 75%;
+        margin: auto;
+        margin-top: 2.54rem;
+        background: #fbfbfd;
+        align-items: center;
+    }
+
+    .main-block {
+        width: 100%;
+        height: 300px;
+    }
+
+    .main-title {
+        margin: auto;
+        color: #000000;
+    }
+
+    .main-title h1 {
+        color: black;
+        margin: 25px 50px;
+    }
+
+    .blog {
+        flex: 1;
+        margin: 35px 17px;
+        padding: 10px 10px;
+        background-color: #f3f3f4;
+
+        max-height: 389px;
+    }
+
+    .portfolio {
+        flex: 1;
+        margin: 35px 17px;
+        padding: 10px 10px;
+        text-align: center;
+        max-width: 330px;
+        max-height: 389px;
+        font-family: "Calibri Light";
+        font-style: italic;
+    }
+
+    .section-portfolio img {
+        max-width: 240px;
+        height: 340px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .blog h2 {
+        color: black;
+        text-align: center;
+    }
+
+    .blog p {
+        color: black;
+        overflow-wrap: anywhere;
+        max-width: 100%;
+    }
+
+    .content1 {
+        display: flex;
+        margin: auto;
+    }
+
+    .content1 ul {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    article .blog {
+        display: flex;
+        width: 280px;
+        margin: 35px 15px;
+        padding: 10px 10px;
+    }
+
+    section p {
+        text-align: center;
+    }
+
+    .tlacitko a:hover {
+        color: #ffffff;
+    }
 }
 
-header a {
-    color: black;
-    text-align: center;
-    font-family: Calibri;
-    padding: 12px;
-    margin: 0 .5rem 0 .5rem;
-    text-decoration: none;
-    font-size: 18px;
-    line-height: 25px;
-    border-radius: 4px;
-}
 
-header a.logo-button:hover{
-    background-color: transparent;
-}
+@media screen and (max-width:660px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        background-color: white;
+        padding: 0 5% 0 5%;
+        align-items: center;
+        position: fixed;
+        width: 100%;
+    }
 
-.section-blog{
-    background-color: white;
-    padding: 20px 10px;
-    width: 100%;
-    height: 100%;
-}
+    header img {
+        height: 70px;
+    }
 
-.section-portfolio{
-    background-color: transparent;
-    padding: 20px 10px;
-    width: 100%;
-    height: 100%;
-}
+    header a {
+        color: #2d2d3b;
+        text-align: center;
+        font-family: Calibri;
+        padding: 12px;
+        margin: 0 .5rem 0 .5rem;
+        text-decoration: none;
+        font-size: 18px;
+        line-height: 25px;
+        border-radius: 4px;
+    }
 
-.header-right{
-    margin-left: auto;
-    display: flex;
-    flex-direction: row;
-}
+    header a.logo-button:hover {
+        background-color: transparent;
+        color: #1982FC;
+        transition-duration: 0.2s;
+    }
 
-.portfolio-buttons{
-    display: flex;
-    flex-direction: row;
-}
 
-.portfolio-buttons a {
-    color: black;
-    text-align: center;
-    font-family: Calibri;
-    padding: 12px;
-    margin: 0 .5rem 0 .5rem;
-    text-decoration: none;
-    font-size: 18px;
-    line-height: 25px;
-    border-radius: 4px;
-}
+    .section-portfolio {
+        background-color: transparent;
+        padding: 20px 10px;
+        width: 100%;
+        height: 100%;
+    }
 
-.portfolio-buttons a:hover {
-    background-color: #ddd;
-    color: black;
-}
+    .header-right {
+        margin-left: auto;
+        display: flex;
+        flex-direction: row;
+    }
 
-.button-overlay{
-    display: flex;
-    background-color: #1982FC;
-    border-radius: 18px;
-    scale: 180%;
-}
+    .portfolio-buttons {
+        display: flex;
+        flex-direction: row;
+    }
 
-.button-overlay a {
-    color: white;
-    text-align: center;
-    font-weight: bold;
-    font-family: Calibri;
-    padding: 12px;
-    margin: 0 .5rem 0 .5rem;
-    text-decoration: none;
-    font-size: 18px;
-    line-height: 25px;
-    border-radius: 4px;
-}
+    .portfolio-buttons a {
+        color: black;
+        text-align: center;
+        font-family: Calibri;
+        padding: 12px;
+        margin: 0 .5rem 0 .5rem;
+        text-decoration: none;
+        font-size: 18px;
+        line-height: 25px;
+        border-radius: 4px;
+    }
 
-.button-overlay:hover {
-    background-color: #f6f3ed;
-}
+    .portfolio-buttons a:hover {
+        background-color: #ddd;
+        color: black;
+    }
 
-.button-overlay a:hover{
-    color: black;
-}
+    .button-overlay {
+        display: flex;
+        background-color: #1982FC;
+        border-radius: 18px;
+        scale: 180%;
+    }
 
-header a.logo {
-    font-size: 25px;
-    font-weight: bold;
-}
+    .button-overlay a {
+        color: white;
+        text-align: center;
+        font-weight: bold;
+        font-family: Calibri;
+        padding: 12px;
+        margin: 0 .5rem 0 .5rem;
+        text-decoration: none;
+        font-size: 18px;
+        line-height: 25px;
+        border-radius: 4px;
+    }
 
-header a:hover {
-    background-color: #ddd;
-    color: black;
-}
+    .button-overlay:hover {
+        background-color: #f6f3ed;
+    }
 
-.header a.active {
-    background-color: #b69fea;
-    color: white;
-}
+    .button-overlay a:hover {
+        color: black;
+    }
 
-.separator {
-    background-color: darkgray;
-    width: 100%;
-    height: 1px;
-    padding-bottom: 6.4rem;
-}
+    header a.logo {
+        font-size: 25px;
+        font-weight: bold;
+    }
 
-body{
-    margin: auto;
-    background-color: #f5f5f5;
-    font-family: Calibri;
-}
+    header a:hover {
+        background-color: #ddd;
+        color: black;
+    }
 
-.container2 {
-    max-width: 75%;
-    height: 9rem;
-    background-color: #fbfbfd;
-    margin: auto;
-}
+    .header a.active {
+        background-color: #b69fea;
+        color: white;
+    }
 
-.container3 {
-    width: 100%;
-    height: 9rem;
-    background-color: #070724;
-    margin: auto;
-}
-section .obrazekreditele img{
-    flex: 1;
-    height: auto;
-    margin: 0;
-}
-.obrazekreditele{
-    display: grid;
-    place-items: center;
-    width: 100%;
-}
+    .separator {
+        background-color: darkgray;
+        width: 100%;
+        height: 1px;
+        padding-bottom: 6.4rem;
+    }
 
-section .slova-contacts p {
-    color: white;
-    text-align: center;
-    font-style: italic;
-    margin: auto auto 2.248514rem auto;
-}
+    .separator-header {
+        background-color: darkgray;
+        width: 100%;
+        height: 1px;
+        padding-bottom: 6.2rem;
+    }
 
-section .slova p {
-    color: #a2a2a2;
-    text-align: center;
-    font-style: italic;
-    margin: auto auto 2.248514rem auto;
-}
+    body {
+        margin: auto;
+        background-color: #f5f5f5;
+        font-family: Calibri;
+    }
 
-.header-welcome{
-    font-family: Calibri;
-    font-weight: 300;
-    text-align: center;
-}
+    .container2 {
+        max-width: 75%;
+        height: 15rem;
+        background-color: #fbfbfd;
+        margin: auto;
+    }
 
-.mainblock2{
-    width: 100%;
-    height: 80px;
-    padding-top: 1.248514rem;
-    margin-top: 10px;
-}
-.mainblock2 h1 {
-    color: white;
-    font-weight: 300;
-    text-align: center;
-}
+    .container2 h1 {
+        text-align: center;
+        margin: auto;
 
-.mainblock1{
-    width: 100%;
-    height: 80px;
-    padding-top: 1.248514rem;
-    margin-top: 10px;
-}
+    }
 
-.mainblock1 h1 {
-    color: black;
-    font-weight: 300;
-    text-align: center;
-}
+    .container3 {
+        width: 100%;
+        height: 7rem;
+        background-color: #070724;
+        margin: auto;
+        margin-top: 8rem;
+    }
 
-.container{
-    display: flex;
-    flex-direction: column;
-    font-family: Calibri;
-    width: 75%;
-    margin: auto;
-    margin-top: 10px;
-    background: #fbfbfd;
-    align-items: center;
-}
-.main-block{
-    width: 100%;
-    height: 300px;
-}
-.main-title{
-    margin: auto;
-    color: #000000;
-}
-.main-title h1{
-    color: black;
-    margin: 25px 50px;
-}
-.blog{
-    flex: 1;
-    margin: 35px 17px;
-    padding: 10px 10px;
-    background-color: #f3f3f4;
-    max-width: 330px;
-    max-height: 389px;
-}
-.portfolio{
-    flex: 1;
-    margin: 35px 17px;
-    padding: 10px 10px;
-    text-align: center;
-    max-width: 330px;
-    max-height: 389px;
-    font-family: "Calibri Light";
-    font-style: italic;
-}
-.section-portfolio img{
-    max-width: 240px;
-    height: 340px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-.blog h2{
-    color: black;
-    text-align: center;
-}
-.blog p{
-    color: black;
-    overflow-wrap: anywhere;
-    max-width: 100%;
-}
-.content{
-    display: flex;
-    margin: 25px 20px;
-    justify-items: center;
-    filter: blur(4px);
-}
-article .blog{
-    display: flex;
-    width: 280px;
-    margin: 35px 15px;
-    padding: 10px 10px;
-}
-section p{
-    text-align: center;
-}
-.tlacitko a:hover {
-    color: #ffffff;
+    section .obrazekreditele img {
+        flex: 1;
+        height: auto;
+        margin: 0;
+    }
+
+    .obrazekreditele {
+        display: grid;
+        place-items: center;
+        width: 100%;
+    }
+
+    section .slova-contacts p {
+        color: white;
+        text-align: center;
+        font-style: italic;
+        margin: auto auto 2.248514rem auto;
+    }
+
+    section .slova p {
+        color: #a2a2a2;
+        text-align: center;
+        font-style: italic;
+        margin: auto auto 2.248514rem auto;
+    }
+
+    .header-welcome {
+        font-family: Calibri;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .mainblock2 {
+        width: 100%;
+        height: 80px;
+        padding-top: 1.248514rem;
+        margin-top: 10px;
+    }
+
+    .mainblock2 h1 {
+        color: white;
+        font-weight: 300;
+        text-align: center;
+    }
+
+    .mainblock1 {
+        width: 100%;
+        height: 80px;
+        padding-top: 1.248514rem;
+        margin-top: 10px;
+    }
+
+    .mainblock1 h1 {
+        color: black;
+        font-weight: 300;
+        text-align: center;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        font-family: Calibri;
+        width: 75%;
+        margin: auto;
+        margin-top: 2.54rem;
+        background: #fbfbfd;
+        align-items: center;
+    }
+
+    .main-block {
+        width: 100%;
+        height: 300px;
+    }
+
+    .main-title {
+        margin: auto;
+        color: #000000;
+    }
+
+    .main-title h1 {
+        color: black;
+        margin: 25px 50px;
+    }
+
+    .blog {
+        flex: 1;
+        margin: 35px 17px;
+        padding: 10px 10px;
+        background-color: #f3f3f4;
+
+        max-height: 389px;
+    }
+
+    .portfolio {
+        flex: 1;
+        margin: 35px 17px;
+        padding: 10px 10px;
+        text-align: center;
+        max-width: 330px;
+        max-height: 389px;
+        font-family: "Calibri Light";
+        font-style: italic;
+    }
+
+    .section-portfolio img {
+        max-width: 240px;
+        height: 340px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .blog h2 {
+        color: black;
+        text-align: center;
+    }
+
+    .blog p {
+        color: black;
+        overflow-wrap: anywhere;
+        max-width: 100%;
+    }
+
+    .content1 {
+        display: flex;
+        margin: auto;
+    }
+
+    .content1 ul {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    article .blog {
+        display: flex;
+        width: 280px;
+        margin: 35px 15px;
+        padding: 10px 10px;
+    }
+
+    section p {
+        text-align: center;
+    }
+
+    .tlacitko a:hover {
+        color: #ffffff;
+    }
 }
