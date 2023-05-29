@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="05d3bfea-9646-4383-9d55-0a19cce88ead" name="zajicek.endora.cz" url="http://zajicek.endora.cz">
+        <fileTransfer rootFolder="/applejelepsinez.android/web/" host="zajicek.endora.cz" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
